@@ -1,0 +1,18 @@
+
+C:\Users\user\AppData\Local\Programs\Python\Python311\python.exe -m venv venv
+
+venv\Scripts\activate
+
+pip freeze > requirements.txt
+
+!pip install -q cassandra-driver
+!pip install -q cassio>=0.1.1
+!pip install -q gradientai --upgrade
+!pip install -q llama-index
+!pip install -q pypdf
+!pip install -q tiktoken==0.4.0
+
+pip install python-dotenv
+
+
+streamlit run streamlit-app.py
